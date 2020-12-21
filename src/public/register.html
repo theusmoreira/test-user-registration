@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register</title>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body { padding-top: 150px; }
+</style>
+
+</head>
+<body class="container-fluid d-flex justify-content-center">
+
+  <form >
+    <h1>Sign Up</h1>
+    <div class="form-outline mb-4">
+      <input type="text" id="name" class="form-control" placeholder="Name"/>
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="email" id="email" class="form-control" placeholder="Email address" />
+    </div>
+
+    <div class="form-outline mb-4">
+      <input type="password" id="password" id="form1Example2" class="form-control" placeholder="Password" />
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-block mb-4">Sign Up</button>
+
+    <div class="text-center">
+      <p>Already registered? <a href="/sign-in">Sign In</a></p>
+    </div>
+  </form>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="register.js" defer></script>
+</body>
+</html>
