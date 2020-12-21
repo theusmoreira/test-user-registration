@@ -2,7 +2,8 @@
     "env": {
         "commonjs": true,
         "es6": true,
-        "node": true
+        "node": true,
+        "browser": true
     },
     "extends": [
         "airbnb-base",
@@ -19,7 +20,11 @@
         "ecmaVersion": 2018
     },
     "rules": {
+      "no-undef":"off",
       "class-methods-use-this":"off",
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "no-unused-vars": ["error", {
+        "argsIgnorePattern": "_"
+      }]
     }
 }
