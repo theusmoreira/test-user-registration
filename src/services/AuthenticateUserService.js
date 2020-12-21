@@ -1,8 +1,8 @@
 import { sign } from 'jsonwebtoken';
 import { compare } from 'bcryptjs';
-import db from '../database';
 
-// import tokenConfig from '../config/token';
+import db from '../database';
+import authConfig from '../config/token';
 import AppError from '../helpers/AppError';
 
 class AuthenticateUserService {
@@ -19,13 +19,9 @@ class AuthenticateUserService {
       throw new AppError('Incorret email/password combination', 401);
     }
 
-    // const { secret, expiresIn } = tokenConfig.jtw;
+    const { secret } = authConfig.jwt;
 
-    // console.log(secret);
-
-    delete user.password;
-
-    const token = sign(user, 'olamundo');
+    const token = sign(user.id, secret);
 
     return {
       user,
