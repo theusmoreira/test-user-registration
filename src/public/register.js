@@ -20,4 +20,6 @@ form.addEventListener('submit', e => {
     })
     .then(response => alert(`Welcome, ${response.data.name}`))
     .catch(error => alert(error.response.data.error));
+
+  form.reset();
 });
