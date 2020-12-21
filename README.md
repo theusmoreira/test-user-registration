@@ -57,5 +57,5 @@ E temos os end-points, que servem arquivos estáticos da api:
 
 
 ### Dificuldades
-- Tive dificuldade parar pensar na estruturação da aplicação, apesar de achar que a estrutura poderia melhorar, usei meus conhecimentos prévios para estruturar a aplicação.
+- Tive dificuldade parar pensar na estruturação da aplicação, apesar de achar que a estrutura poderia melhorar, usei meus conhecimentos prévios na estruturação da aplicação.
 - Também tive um pouco de dificuldade para servir os arquivos estáticos na aplicação, minha ideia inicial era usar a template engine EJS, mas decidir por optar por arquivos html.
