@@ -4,7 +4,6 @@ import express from 'express';
 import logger from 'morgan';
 import path from 'path';
 import { errors } from 'celebrate';
-
 import AppError from './helpers/AppError';
 import routes from './routes';
 
@@ -35,6 +34,6 @@ const PORT = 3000;
 
 app.listen(PORT, () => {
   console.log(
-    `Server running on port ${PORT} - http://localhost:${3000}/sign-in`,
+    `Server running on port ${PORT} - http://localhost:${PORT}/sign-in`,
   );
 });
